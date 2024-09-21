@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <link rel="shortcut icon" href="img/mein_bild.ico" type="image/x-icon">
+  <title>Andrey Boivalenko - Full Stack Software Developer</title>
+
+  <meta name="keywords" content="Spring Boot, Spring Data JPA, Spring Security, Java SE,
+  Java EE">
+  <meta name="description" content="Spring Boot, Spring Data JPA, Spring Security, Java SE,
+  Java EE">
+
+  <!-- Bootstrap CSS CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--==================================================-->
+
+  <!-- Fontawesome Fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--==================================================-->
+
+  <!--jQuery-CSS confirm ==================================================
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.3/jquery-confirm.min.css"> 
+  <!--==================================================-->
+
+  <!--jQuery-CSS Theme ==================================================
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+  <!--==================================================-->
+
+  <!--Bootstrap-datetimepicker-CSS  ==================================================-->
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker-standalone.css">
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+  <!--==================================================-->
+
+  <!-- Export PDF, Excel - Projekt_1 ==================================================-->
+  <link rel="stylesheet" href="https://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+  <!--==================================================-->
+
+   <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+
+<!--
+<script>
+var message = "Der rechter Mouse Click Funktion ist aus Sicherheitsgründen ausgeschalt";
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+document.onmousedown = rtclickcheck;
+</script>  
+-->
+
+   <link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css"/>
+   <script src="js/other/cookieconsent.min.js"></script>
+   <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#009688"
+                    },
+                    "button": {
+                        "background": "#62ffaa"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "Diese Webseite verwendet Cookies, um die Bedienfreundlichkeit zu erhöhen.",
+                    "dismiss": "OK",
+                    "link": "mehr erfahren",
+                    "href": "datenschutz/datenschutz.html"
+                }
+            })
+        });
+    </script>
+	
+	
+  <!--Meine CSS-Bibliothek>
+     ==================================================-->
+  <link rel="stylesheet" href="css/style_0.css">
+  <!--==================================================-->
+  
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!-- NAVIGATION MENU-->
+<div class="nav">
+<div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar_brand">
+	<a class="navbar-brand" href="#myPage">
+		&nbsp;&nbsp;&nbsp;boivalenko.de&nbsp;&nbsp; <span class="glyphicon glyphicon-home"></span>
+	</a>
+	  </div>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog fa-spin fa fa-inverse slow-spin" aria-hidden="true"></i> Einstellungen <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Background Style &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+                            <ul class="dropdown-menu" id="backgrounds">
+                                <li><a id="action-0">Black & White</a></li>
+                                <li><a id="action-1">Diving</a></li>
+                                <li><a id="action-2">Depth</a></li>
+                                <li><a id="action-3">Dawn in the ocean</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+	<li><a href="#myPage">&nbsp;&nbsp;Home</a></li>
+	<li><a href="#java_e_p">&nbsp;&nbsp;Java Web Projekte</a></li>
+	<li><a href="#java_se">&nbsp;&nbsp;Java SE (Konsole & Desktop) Projekte</a></li>	
+	<li><a href="#datenbankdesign">&nbsp;&nbsp;Datenbankdesign Projekte</a></li>
+	<li><a href="#frontend">&nbsp;&nbsp;Frontend Projekte</a></li>
+	<li><a href="#feedback">&nbsp;&nbsp;Kontakte</a></li>
+	<li><a href="https://boivalenko.de/lebenslauf_zeugnisse.pdf" target="_blank">&nbsp;&nbsp;Lebenslauf & Zeugnisse</a></li>
+	
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<!-- NAVIGATION MENU-->
+
+<!--HEADER -->
+<div id="header">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<br>
+<br>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align:justify;">
+<div>
+<br>
+                <img class="img-responsive" 
+                     alt="" src="img/foto.jpg" 
+					 style="
+	width:40%;height:40%;display:block;
+	margin-left: auto;
+	margin-right: auto;" 
+                     />
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align:justify;">
+<div style = "width:50%;height:40%;display:block;
+	margin-left: auto;
+	margin-right: auto;">
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+<h1>Andrey Boivalenko</h1>
+<br>
+<br>
+<h2>Full Stack Software Developer</h2>
+<br>
+<h3>
+Auf meiner Portfolio-Website findet man Präsentation von Projekten aus den Bereichen: 
+<br>
+<br>
+<ul>
+<p>
+<li><a href="#java_e_p" class="header_links_willkommen">Java Web</a></li>
+</p>
+<p>
+<li><a href="#java_se" class="header_links_willkommen">Java SE</a></li>
+</p>
+<p>
+<li><a href="#datenbankdesign" class="header_links_willkommen">Datenbankdesign</a></li>
+</p>
+<p> 
+<li><a href="#frontend" class="header_links_willkommen">Frontend</a></li>
+</p>
+</ul>
+<br>
+<a href="https://boivalenko.de/lebenslauf_zeugnisse.pdf" class="header_links_willkommen" target="_blank"> Hier</a> 
+sind meine Lebenslauf und Zeugnisse
+<br>
+<br>
+<a href="#feedback" class="header_links_willkommen">Hier</a> sind meine Kontaktdaten 
+<br>
+<br>
+</h3>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- _________________________________________JAVA Web Projekte__________________________________-->
+
+<div id="java_e_p">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <h1>Java Web Projekte</h1>
+  <p>
+In dieser Rubrik werden Projekte präsentiert, die auf Basis von Java Web Platform entwickelt wurden.
+  </p>
+  <p>
+IntelliJ IDEA und Liferay IDE wurde bei der Entwicklung als IDE's verwendet.
+  </p>
+<p>
+</p>
+
+    <div id="java_e_p_filter">
+        <button class="btn btn-primary java_e_p_filter-button" data-filter="all">Alle Projekte</button>
+        <button class="btn btn-primary java_e_p_filter-button" data-filter="java_spring">Spring Projekte</button> 		
+        <button class="btn btn-primary java_e_p_filter-button" data-filter="java_liferay">Liferay und Spring Projekte (Portlets)</button>
+		<button class="btn btn-primary java_e_p_filter-button" data-filter="java_ee_restful">RESTful</button>
+		<button class="btn btn-primary java_e_p_filter-button" data-filter="java_ee">Java EE Projekte</button>
+		<button class="btn btn-primary java_e_p_filter-button" data-filter="java_ee_soap">SOAP</button>	
+    </div>
+
+
+ <div class ="intervall"></div>
+
+ <div class="row slideanim">
+  
+ <div class="sortable">
+ 
+ 	 
+	 <!--java_e_p_projekt_5-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_e_p_filter java_spring java_ee_restful">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_e_p_projekt_5_modal"
+                     alt="" src="img/java_ep/spring/projekt_2/team_tasks_planning.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Onboarding Tool
+                </p>
+                </div>
+            </figure>
+            </div>
+     </div> 
+	 
+	 <!--java_e_p_projekt_6-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_e_p_filter java_spring java_ee_restful">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_e_p_projekt_6_modal"
+                     alt="" src="img/java_ep/spring/projekt_3/online_bibliothek.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Digitale Bibliothek
+                </p>
+                </div>
+            </figure>
+            </div>
+     </div> 
+
+<!--java_e_p_projekt_1-->
+
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_e_p_filter java_liferay">
+            <div class="each-item zoom">
+            <figure>
+              <div class="ui-state-default">
+                <img class="img-responsive" data-toggle="modal"
+                data-target="#java_e_p_projekt_1_modal"  
+				alt="" src="img/java_ep/java_liferay/projekt_1/handlungsfeld.jpg"
+                />
+
+                </div>
+                <div class="cap2">
+                    <p div class="pop-up_text_projekt">Portlet "Handlungsfeld"</p>
+                </div>
+            </figure>
+            </div>
+        </div>
+     
+<!--java_e_p_projekt_2-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_e_p_filter java_liferay">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_e_p_projekt_2_modal"
+                     alt="" src="img/java_ep/java_liferay/projekt_2/kennzahlen.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Portlet "Kennzahlen"</p>
+                </div>
+            </figure>
+            </div>
+        </div>
+
+<!--java_e_p_projekt_3-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_e_p_filter java_liferay">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_e_p_projekt_3_modal"
+                     alt="" src="img/java_ep/java_liferay/projekt_3/verschiedene_portlets.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Portlets "Vorgänge","Dokuments" usw.
+                </p>
+                </div>
+            </figure>
+            </div>
+        </div> 
+		
+<!--java_e_p_projekt_4-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_e_p_filter java_spring java_ee_restful">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_e_p_projekt_4_modal"
+                     alt="" src="img/java_ep/spring/projekt_1/crud_app.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Spring MVC CRUD APP + Spring Data JPA
+                </p>
+                </div>
+            </figure>
+            </div>
+     </div> 
+
+
+ </div>
+ </div>
+
+</div>
+</div>
+
+
+<!--java_e_p_projekt_1-->
+
+<div id="java_e_p_projekt_1">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_e_p_projekt_1_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Portlet "Handlungsfeld"</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_e_p_projekt_1_menu1">Kurze Beschreibung</a></li>
+    <li><a data-toggle="tab" href="#java_e_p_projekt_1_menu2">Video Präsentation</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_e_p_projekt_1_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+<b>
+  Es geht hier um ein Liferay <a href="https://de.wikipedia.org/wiki/Portlet" target="_blank">Portlet</a>, 
+  das von mir während meiner Ausbildung bei der <a href="https://www.eiskonzept.de/" target="_blank">eis Konzept AG</a> implementiert wurde.
+</b>
+</p>
+<p>
+Technologien, die dafür benutzt werden können/sollten, um allgemein Liferay Portlets zu implementieren:
+</p>
+<p>
+HTML, CSS, JavaScript, MyBatis/Hibernate oder einer anderer von modernen Java Persistence Frameworks um Datenbankzugriffe zu implementieren. 
+</p>
+<p>
+Liferay Portlets basieren auf Java Enterprise Edition mit der Unterstützung von Spring Framework. 
+Bei Portlets wurden Frontend/Backend bzw. MVC Logik realisiert.
+</p>
+<p>
+Als Javascript Framework wurde das DOJO Framework benutzt. Andere Javascript Frameworks (z.B. Angular JS, Angular 2, ReactJS u.w.) sollen angeblich auch dafür geeignet sein.
+</p>
+
+<b>Für die Entwicklung wurde folgende Software benötigt:</b>
+<p>
+</p>
+<ul style="list-style-type:disc">
+  <li>Liferay IDE (Eclipsebasierte Entwicklungsumgebung für Liferay Portal)</li>
+  <li>Liferay Portal Server 6.2.0 (Portalserver mit Tomcat)</li>
+  <li>AquaDataStudio (Datenbank-Tool)</li>
+  <li>Diverse Browser (Internet Explorer, Chrome, Firefox)</li>
+</ul>
+
+</div>
+<p>
+</p>
+    <div id="java_e_p_projekt_1_menu2" class="tab-pane fade">
+        <p>
+		<br>
+		<br>
+
+<div style="padding:52.66% 0 0 0;position:relative;"><iframe 
+src="https://player.vimeo.com/video/1011270810?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+title="handlungsfeld"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		<br>
+		<br>
+		</p>
+    </div>
+<p>
+</p>
+  </div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--java_e_p_projekt_2-->
+
+<div id="java_e_p_projekt_2">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_e_p_projekt_2_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Portlet "Kennzahlen"</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_e_p_projekt_2_menu1">Kurze Beschreibung</a></li>
+    <li><a data-toggle="tab" href="#java_e_p_projekt_2_menu2">Video Präsentation</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_e_p_projekt_2_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+<b>
+  Es geht hier um ein Liferay <a href="https://de.wikipedia.org/wiki/Portlet" target="_blank">Portlet</a>, 
+  das von mir während meiner Ausbildung bei der <a href="https://www.eiskonzept.de/" target="_blank">eis Konzept AG</a> implementiert wurde.
+</b>
+</p>
+<p>
+Technologien, die dafür benutzt werden können/sollten, um allgemein Liferay Portlets zu implementieren: 
+</p>
+<p>
+HTML, CSS, JavaScript, MyBatis/Hibernate oder einer anderer von modernen Java Persistence Frameworks um Datenbankzugriffe zu implementieren. 
+</p>
+<p>
+Liferay Portlets basieren auf Java Enterprise Edition mit der Unterstützung von Spring Framework. 
+Bei Portlets wurden Frontend/Backend bzw. MVC Logik realisiert.
+</p>
+<p>
+Als Javascript Framework wurde das DOJO Framework benutzt. Andere Javascript Frameworks (z.B. Angular JS, Angular 2, ReactJS u.w.) sollen angeblich auch dafür geeignet sein.
+</p>
+
+<b>Für die Entwicklung wurde folgende Software benötigt:</b>
+<p>
+</p>
+<ul style="list-style-type:disc">
+  <li>Liferay IDE (Eclipsebasierte Entwicklungsumgebung für Liferay Portal)</li>
+  <li>Liferay Portal Server 6.2.0 (Portalserver mit Tomcat)</li>
+  <li>AquaDataStudio (Datenbank-Tool)</li>
+  <li>Diverse Browser (Internet Explorer, Chrome, Firefox)</li>
+</ul>
+</div>
+<p>
+</p>
+    <div id="java_e_p_projekt_2_menu2" class="tab-pane fade">
+	    <p>
+		<br>
+		<br>
+<div style="padding:52.66% 0 0 0;position:relative;"><iframe 
+src="https://player.vimeo.com/video/1011273840?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+title="kennzahlen"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		</p>
+    </div>
+<p>
+</p>
+  </div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--java_e_p_projekt_3-->
+
+<div id="java_e_p_projekt_3">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_e_p_projekt_3_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Die Portlets: "Vorgänge","Dokuments","Termine" und "Historie"</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_e_p_projekt_3_menu1">Kurze Beschreibung</a></li>
+    <li><a data-toggle="tab" href="#java_e_p_projekt_3_menu2">Video Präsentation</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_e_p_projekt_3_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+<b>
+ Es geht hier um Liferay <a href="https://de.wikipedia.org/wiki/Portlet" target="_blank">Portlets</a>, 
+ die von mir während meiner Ausbildung bei der <a href="https://www.eiskonzept.de/" target="_blank">eis Konzept AG</a> implementiert wurden.
+</b>
+</p>
+<p>
+Technologien, die dafür benutzt werden können/sollten, um allgemein Liferay Portlets zu implementieren: 
+</p>
+<p>
+HTML, CSS, JavaScript, MyBatis/Hibernate oder einer anderer von modernen Java Persistence Frameworks um Datenbankzugriffe zu implementieren. 
+</p>
+<p>
+Liferay Portlets basieren auf Java Enterprise Edition mit der Unterstützung von Spring Framework. 
+Bei Portlets wurden Frontend/Backend bzw. MVC Logik realisiert.
+</p>
+<p>
+Als Javascript Framework wurde das DOJO Framework benutzt. Andere Javascript Frameworks (z.B. Angular JS, Angular 2, ReactJS u.w.) sollen angeblich auch dafür geeignet sein.
+</p>
+
+<b>Für die Entwicklung wurde folgende Software benötigt:</b>
+<p>
+</p>
+<ul style="list-style-type:disc">
+  <li>Liferay IDE (Eclipsebasierte Entwicklungsumgebung für Liferay Portal)</li>
+  <li>Liferay Portal Server 6.2.0 (Portalserver mit Tomcat)</li>
+  <li>AquaDataStudio (Datenbank-Tool)</li>
+  <li>Diverse Browser (Internet Explorer, Chrome, Firefox)</li>
+</ul>
+</div>
+<p>
+</p>
+    <div id="java_e_p_projekt_3_menu2" class="tab-pane fade">
+		        <p>
+		<br>
+		<br>
+		<div style="padding:52.66% 0 0 0;position:relative;"><iframe 
+		src="https://player.vimeo.com/video/1011274013?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+		frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+		title="vorgaenge_dokuments_termine_und_historie">
+		</iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+	<p>
+	</p>
+  </div>
+</div>
+
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<!--java_e_p_projekt_4-->
+
+<div id="java_e_p_projekt_4">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_e_p_projekt_4_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Spring MVC CRUD APP + Spring Data JPA + DB</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_e_p_projekt_4_menu1">Kurze Beschreibung</a></li>
+    <li><a data-toggle="tab" href="#java_e_p_projekt_4_menu2">Video Präsentation</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_e_p_projekt_4_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+<b>
+<u>Es war vorhanden eine Basis </u> für eine Spring MVC CRUD Applikation (mit einer DB Tabelle "player").
+Zur Basis des Projektes gehörten Spring Configurationsklassen, UI und JUnit Tests.</b>
+</p>
+<p>
+Das folgende Funktional habe ich realisiert:
+</p>
+<ul style="list-style-type:disc">
+  <li>Eine sortierte Liste allen Spieler nach Filtern erhalten</li>
+  <li>Die Anzahl allen Spieler erhalten, die bestimmten Filtern entsprechen</li>
+  <li>Einen neuen Spieler in die Datenbank hinzufügen. Dabei mussten die Daten des Spielers davor validiert werden</li>
+  <li>Einen Spieler nach einer ID-Nummer erhalten. Dabei musste nachgeprüft werden, 
+  ob der Spieler in der DB angelegt wurde und ob die ID-Nummer valid ist</li>
+  <li>Die Eigenschaften einer vorhandenes Spielers Bearbeiten (aktualisieren). Dabei mussten die eingegebenen Daten validiert werden</li>
+  <li>Einen Spieler nach ID-Nummer löschen. Dabei musste nachgeprüft werden, 
+  ob der Spieler in der DB existiert und ob die ID-Nummer des Spielers valid ist</li>
+  <li>Geschäftslogik zur Berechnung der Bewertung des Spielers machen (beim Interesse eine entsprechende technische Doku anschauen, 
+  die beim Projekt angelegt wurde)</li>
+  <li>Allgemein: korrekt alle Daten validieren und dynamisch anzeigen lassen</li>
+</ul>
+<p>
+Die Haupt Technologien, die ich bei dem Projekt verwendet habe:
+<ul style="list-style-type:disc">
+  <li>Maven</li>
+  <li>Spring</li>
+  <li>Spring Data JPA</li>
+  <li>MySQL</li>
+  <li>Tomcat</li>
+  <li>JUnit</li>
+</ul>
+</p>
+<p>
+Der Link auf <a href="https://github.com/andreyboiv/springMVCapp" target="_blank" >GitHub</a>
+</p>
+</div>
+<p>
+</p>
+    <div id="java_e_p_projekt_4_menu2" class="tab-pane fade">
+		<br>
+		<br>
+		
+		<div style="padding:54.18% 0 0 0;position:relative;"><iframe 
+		src="https://player.vimeo.com/video/1011274830?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+		frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+		title="spring_mvc_crud"></iframe></div><script 
+		src="https://player.vimeo.com/api/player.js"></script>
+
+  </p>
+    </div>
+<p>
+</p>
+  </div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>	
+
+<!--java_e_p_projekt_5-->
+
+<div id="java_e_p_projekt_5">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_e_p_projekt_5_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Onboarding Tool Projekt</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_e_p_projekt_5_menu1">Kurze Beschreibung</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_e_p_projekt_5_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+<p>
+<p>
+<b>
+Das ist ein Spring Boot Projekt (Backend) + Angular Material (Frontend). 
+PostgreSQL wurde als Datenbank verwendet.
+</b>  
+<p>
+Ein neuer Mitarbeiter hat eine gewisse Anzahl von Onboarding Aufgaben zu erledigen. 
+Wenn alle diese Aufgaben vom Mitarbeiter erledigt sind, soll der Workflow ja beenden. 
+Dabei wird der Mitarbeiter vom System ausgeloggt bzw. 
+deaktiviert und per E-Mail benachrichtigt. 
+Die Benachrichtigung erhält das Onboarding Team entsprechend auch.
+</p>
+<p>
+<br>
+<a href="https://github.com/andreyboiv/onboarding-tool" target="_blank" >Das Projekt auf GitHub</a>
+<br>
+</p>
+</div>
+<p>
+</p>
+<p>
+</p>
+  </div>
+</div>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>	
+
+<!--java_e_p_projekt_6-->
+
+<div id="java_e_p_projekt_6">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_e_p_projekt_6_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Digitale Bibliothek</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_e_p_projekt_6_menu1">Kurze Beschreibung</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_e_p_projekt_6_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+</p>
+<b>
+Das ist ein Spring Boot Projekt. 
+Für Frontend wurde JSF (Primefaces & Bootsfaces) verwendet. 
+<p>
+MySQL wurde als Datenbank verwendet.
+</p>
+</b>
+<p>
+Authentifizierte Benutzer dürfen verfügbare Bücher im System lesen (online), löschen, herunterladen und bewerten. 
+Dabei gibt’s auch eine Möglichkeit, neue Bücher hinzuzufügen. 
+</p>
+Hauptfunktionalität:
+<p>
+<ul style="list-style-type:disc">
+  <li>Authentifizierung/Autorisierung eines Benutzers (Login-Passwort)</li>
+  <li>Trennung nach Rollen (z.B nur Admins haben Zugriff auf geschützte Bereiche)</li>
+  <li>Möglichkeit zum Bearbeiten/Löschen/Hinzufügen von Büchern</li>
+  <li>Anpassbare Paginierung von Büchern</li>
+  <li>Sprachumschaltung (Deutsch und Englisch)</li>
+  <li>Suche nach Büchern</li>
+  <li>Bücher lesen (online)</li>
+  <li>Abstimmung für das Buch (Rating eines Büchers)</li>
+  <li>Sammlung von Statistiken über die Anzahl der Buch Aufrufe (wie viel mal das Buch schon angeschaut wurde)</li>
+</ul>
+</p>
+<p>
+</p>
+<p>
+</p>
+Mehr Details & Beschreibung zum Projekt finden Sie auf <a href="https://github.com/andreyboiv/digitale_bibliothek" target="_blank" >GitHub</a>
+</div>
+<p>
+</p>
+<p>
+</p>
+  </div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>	
+
+  </div>  
+</div>
+
+
+<!--_______________________JAVA SE_________________________________________________-->
+
+<div id="java_se">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <h1>Java SE (Konsole & Desktop) Projekte</h1>
+  <p>
+In dieser Rubrik werden Projekte präsentiert, die auf Basis von Java Standard Edition Platform entwickelt wurden.
+  </p>
+  <p>
+IntelliJ IDEA wurde bei der Entwicklung als IDE verwendet.
+  </p>
+
+ <p>
+ </p>
+
+    <div id="java_se_filter">
+        <button class="btn btn-primary java_se_filter-button" data-filter="all">Alle Projekte</button>
+        <button class="btn btn-primary java_se_filter-button" data-filter="java_se_konsole">Konsolenanwendungen</button>
+        <button class="btn btn-primary java_se_filter-button" data-filter="java_se_swing">Swing Anwendungen</button>
+		<button class="btn btn-primary java_se_filter-button" data-filter="java_se_soap">SOAP</button>
+		<button class="btn btn-primary java_se_filter-button" data-filter="java_se_javafx">JavaFX Anwendungen</button>
+		<button class="btn btn-primary java_se_filter-button" data-filter="java_se_restful">RESTful</button>		
+    </div>
+
+ <div class ="intervall"></div>
+
+ <div class="row slideanim">
+  
+ <div class="sortable">
+
+<!--java_se_projekt_4--> 
+	 
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_se_filter java_se_konsole java_se_soap">
+            <div class="each-item zoom">
+            <figure>
+              <div class="ui-state-default">
+                <img class="img-responsive" data-toggle="modal"
+                data-target="#java_se_projekt_4_modal"  
+					alt="" src="img/java_se/projekt_4/p1.jpg"
+                />
+
+                </div>
+                <div class="cap2">
+                    <p div class="pop-up_text_projekt">OCR Projekt</p>
+                </div>
+            </figure>
+            </div>
+        </div>	
+
+<!--java_se_projekt_1-->
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_se_filter java_se_konsole">
+            <div class="each-item zoom">
+            <figure>
+              <div class="ui-state-default">
+                <img class="img-responsive" data-toggle="modal"
+                data-target="#java_se_projekt_1_modal"  alt="" src="img/java_se/projekt_1/p1.jpg"
+                />
+
+                </div>
+                <div class="cap2">
+                    <p div class="pop-up_text_projekt">XML Generator</p>
+                </div>
+            </figure>
+            </div>
+        </div>
+     
+	 
+<!--java_se_projekt_2-->
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_se_filter java_se_swing">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_se_projekt_2_modal"
+                     alt="" src="img/java_se/projekt_2/p2.jpg"/>
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">MP3 Player
+                </p>
+                </div>
+            </figure>
+            </div>
+        </div>
+	
+		
+<!--java_se_projekt_3-->
+       
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 java_se_filter java_se_swing"> 
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#java_se_projekt_3_modal"
+                     alt="" src="img/java_se/projekt_3/calc.jpg"/>
+                    </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">SWING Kalkulator
+                </p>
+                </div>
+            </figure>
+            </div>
+     </div> 
+	 
+ </div>
+ </div>
+
+</div>
+</div>
+
+
+<!--java_se_projekt_1-->
+
+<div id="java_se_projekt_1">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_se_projekt_1_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">XML Generator</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_se_5_menu1">Kurze Beschreibung</a></li>
+    <!-- <li><a data-toggle="tab" href="#java_se_5_menu2">Dokumentation</a></li> -->
+  </ul>
+  <div class="tab-content">
+    <div id="java_se_5_menu1" class="tab-pane fade in active">
+<br>
+
+XML Generator – ist eine Java Konsole Anwendung*, die von einer Bat Datei gestartet wird. 
+Das Ziel des Programmes ist es zu jeder PDF Datei eine entsprechende XML Datei mit gleichem Namen 
+wie die PDF Datei zu generieren. Dies erfolgt, falls eine PDF Datei sowohl der Namenskonvention 
+entspricht als auch eine gültige Händlernummer beinhaltet. Dabei werden zu diesen PDF Dateien noch 
+eine VZ-Nummer** hinzugefügt. 
+<br>
+<br>
+* - die Anwendung wurde für die <a href="http://www.skoda-auto.de/" target="_blank">ŠKODA AUTO Deutschland GmbH</a> 
+während meiner Ausbildung bei der <a href="https://www.eiskonzept.de/" target="_blank">eis Konzept AG</a> implementiert 
+und da seit April 2016 produktiv eingesetzt.
+<br>
+<br>
+** - eine spezifische Nummer
+</div>
+<p>
+</p>
+<!--
+    <div id="java_se_5_menu2" class="tab-pane fade">
+<br>      
+<a href="doc/java_se/projekt_1/ET_XML_GENERATOR_Dokumentation.pdf" target="_blank">XML Generator Dokumentation *</a>
+<br>
+* - Es wurde manche Information aus der Datei aufgrund der Datenschutzerklärung entfernt.
+    </div> -->
+<p>
+</p>
+  </div>
+</div>
+
+
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--java_se_projekt_2-->
+<div id="java_se_projekt_2">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_se_projekt_2_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">MP3 Player</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_se_projekt_2_menu1">Kurze Beschreibung</a></li>
+    <li><a data-toggle="tab" href="#java_se_projekt_2_menu2">Erste Video Präsentation</a></li>
+	<li><a data-toggle="tab" href="#java_se_projekt_2_menu3">Zweite Video Präsentation</a></li>
+	<li><a data-toggle="tab" href="#java_se_projekt_2_menu4">Dritte Video Präsentation</a></li>
+</ul>
+
+  <div class="tab-content">
+    <div id="java_se_projekt_2_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+</p>
+  Es geht hier um einen einfachen MP3 Player, den von mir implementiert wurde.
+  Ziele des Projektes waren, dass ich Ihnen zeige, dass ich die SWING Technologie kenne, OOP Denken kann, Refactoring des Codes machen kann und zusätzliche 
+  extra Bibliotheken im Projekt verwenden kann.
+  <p>
+  Die Präsentation zum Projekt ist auf 3 Videos aufgeteilt:
+  </p>
+  <p>
+  1. Erste Video Präsentation -> eine Übersicht des Programmes (UI und Quellcode)
+  </p>
+  <p>
+  2. Zweite Video Präsentation -> eine Refactoring des Quellcodes in Intellij IDEA
+  </p>
+  <p>
+  3. Dritte Video Präsentation -> Fixen eines Buges
+  </p>
+  <p>
+  Der Link auf <a href="https://github.com/andreyboiv/java_swing_mp3player" target="_blank" >GitHub</a>
+  </p>
+</div>
+<p>
+</p>
+    <div id="java_se_projekt_2_menu2" class="tab-pane fade">
+		<br>
+		<br>
+		<div style="padding:56.25% 0 0 0;position:relative;"><iframe 
+		src="https://player.vimeo.com/video/1011275797?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+		frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+		title="mp3player_1"></iframe></div><script 
+		src="https://player.vimeo.com/api/player.js"></script>
+<p>
+  </p>
+  <p>
+  Auf dem ersten Video zum Projekt wird eine Übersicht des Programmes gemacht. 
+  Zunächst wird angezeigt, wie das Programm aussieht bzw. funktioniert (in Netbeans). 
+  Dann wird den Quellcode in IntelliJ IDEA präsentiert.
+  </p>
+    </div>
+<p>
+</p>
+
+    <div id="java_se_projekt_2_menu3" class="tab-pane fade">
+        <p>
+		<br>
+		<br>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe 
+src="https://player.vimeo.com/video/1011275574?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+title="mp3player_2"></iframe></div><script 
+src="https://player.vimeo.com/api/player.js"></script>
+  <p>
+  </p>
+  <p>
+  Auf dem zweiten Video zum Projekt wird eine Refactoring des Quellcodes in Intellij IDEA angezeigt.
+  Ziele, die ich mir bei der Refactoring gesetzt hatte: 
+  </p>
+  <p>
+     1. Jeder Klasse muss sich mit seine Arbeit beschäftigen. 
+  </p>
+  <p>
+     2. Auf Grund des 1. Punkt wurden entsprechende Interfaces und dazu gehörende Hilfsklassen erstellt, 
+  dass das Programm bzw. der Quellcode gut erweiterbar ist und OOP (Style) entspricht.
+  </p>
+
+</div>
+
+
+    <div id="java_se_projekt_2_menu4" class="tab-pane fade">
+        <p>
+		<br>
+		<br>
+<div style="padding:56.25% 0 0 0;position:relative;">
+<iframe src="https://player.vimeo.com/video/1011275728?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+title="mp3player_3"></iframe></div><script 
+src="https://player.vimeo.com/api/player.js"></script>
+  </p>
+  <p>
+  Auf dem dritten Video wird es gezeigt, wie ein Bug im Projekt gefixed wurde.
+  </p>
+</div>
+
+  </div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--java_se_projekt_3-->
+<div id="java_se_projekt_3">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="java_se_projekt_3_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SWING Kalkulator</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_se_projekt_3_menu1">Kurze Beschreibung</a></li>
+    <li><a data-toggle="tab" href="#java_se_projekt_3_menu2">Video Präsentation</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_se_projekt_3_menu1" class="tab-pane fade in active">
+      <p>
+      </p>
+      <br>
+<p>
+  Es geht hier um einen ganz einfachen Kalkulator, den von mir implementiert wurde.
+  Der Kalkulator ist kein super funktioneller Kalkulator. Ziel ist: um die Beherrschung von SWING Technologie zu zeigen.
+</p>
+<p>
+  Der Link auf <a href="https://github.com/andreyboiv/swing_calc_easy" target="_blank" >GitHub</a>
+</p>
+</div>
+<p>
+</p>
+    <div id="java_se_projekt_3_menu2" class="tab-pane fade">
+        <p>
+		<br>
+		<br>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe 
+src="https://player.vimeo.com/video/1011275966?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="swing_calc_easy">
+</iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </p>
+  <p>
+  Auf dem Video habe ich vergessen zu sagen, welche Listeners ich im Programm benutzt habe. Das waren: 
+  ActionListener, FocusListener und MouseAdapter. 
+  Noch ein paar Besonderheiten: 1. ich habe Reflection verwendet, um Skins zu laden. 2. Es wurde Polymorphie verwendet 
+  um richtige Calc Opearationen auszusuchen.
+  </p>
+    </div>
+<p>
+</p>
+  </div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--java_se_projekt_4-->
+
+ <div id="java_se_projekt_4">
+ 
+<!-- Modal_Haupt -->
+  <div class="modal_formen">
+  <div class="modal fade" id="java_se_projekt_4_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">OCR Projekt</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#java_se_projekt_4_modal_menu1">Info über das Projekt</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="java_se_projekt_4_modal_menu1" class="tab-pane fade in active">
+<p>
+</p>
+Das Projekt wurde von mir bei der Firma <a href="https://www.saascom.de/" target="_blank">saascom GmbH</a> realisiert.
+Es ging um die Implementierung und Integration einer third-party OCR Komponente auf Java Basis.
+Dabei wurde eine SOAP Webserviceschnittstelle zur Integration bei internen Softwareanwendungen erstellt.
+<p>
+</p>
+<b>Hauptaufgaben beim Projekt:</b>
+<p>
+</p>
+1. Kommunikation und Diskussion mit dem Projektleiter bezüglich der Projektstruktur und -anforderungen
+<p>
+</p>
+2. Selbstständige und tiefgreifende Marktanalyse geeigneter third-party Softwaretools für das Projekt
+<p>
+</p>
+3. Selbständige und umfangreiche Einarbeitung in die technische Dokumentation (API) des ausgewählten third-party Softwaretools
+<p>
+</p>
+4. Projektierung und Entwicklung des SOAP Projektes (Server und Client) für Windows und Linux OS
+<p>
+</p>
+5. Testing der Funktionalität und Schnittstellen des Projektes mit JUnit Tests, Logs (log4j) und SoapUI
+<p>
+</p>
+6. Erstellung der technischen und fachlichen Dokumentation für das Projekt
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<b>Open Source Dependencies (Komponenten) beim Projekt:</b>
+<p>
+</p>
+slf4j-log4j12, commons-io, 
+org.apache.commons (commons-lang3, commons-pool2), 
+org.apache.pdfbox, junit, org.assertj (assertj-core) und com.sun.xml.ws (jaxws-rt)
+<p>
+</p>
+</div>
+<p>
+</p>
+
+<p>
+</p>
+  </div>
+</div>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+        </div>
+          </div>
+      </div>
+    </div>	
+
+	
+  </div>  
+</div>
+
+<!--_______________________Datenbankdesign
+  _________________________________________________-->
+
+<div id="datenbankdesign">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <h1>Datenbankdesign Projekte</h1>
+  <p>
+Hier wird die Struktur (Entwurf) der relationalen Datenbanken präsentiert, die von mir modelliert wurden.
+  </p>
+  <p>
+MySQL Workbench wurde als Datenbank-Modellierungswerkzeug verwendet.
+  </p>
+ <p>
+ </p>
+
+    <div id="datenbankdesign_filter">
+        <button class="btn btn-primary datenbankdesign_filter-button" data-filter="all">Alle Projekte</button>
+        <button class="btn btn-primary datenbankdesign_filter-button" data-filter="datenbankdesign_r">Relationale Datenbanken</button>
+        <button class="btn btn-primary datenbankdesign_filter-button" data-filter="datenbankdesign_unr">Nicht relationale Datenbanken</button>	
+    </div>
+
+ <div class ="intervall"></div>
+
+ <div class="row slideanim">
+  
+ <div class="sortable">
+
+<!--datenbankdesign_projekt_1-->
+
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 datenbankdesign_filter datenbankdesign_r">
+            <div class="each-item zoom">
+            <figure>
+              <div class="ui-state-default">
+                <img class="img-responsive" data-toggle="modal"
+                data-target="#datenbankdesign_projekt_1_modal"  alt="" src="img/datenbankdesign/projekt_1/p1.jpg"
+                />
+
+                </div>
+                <div class="cap2">
+                    <p div class="pop-up_text_projekt">Virtuale Schule (E-Lernen)</p>
+                </div>
+            </figure>
+            </div>
+        </div>
+     
+<!--datenbankdesign_projekt_2-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 datenbankdesign_filter datenbankdesign_r">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#datenbankdesign_projekt_2_modal"
+                     alt="" src="img/datenbankdesign/projekt_2/p2_3.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Online Shop</p>
+                </div>
+            </figure>
+            </div>
+        </div>
+ </div>
+ </div>
+
+</div>
+</div>
+
+
+ <div id="datenbankdesign_projekt_1">
+<!-- Modal_Haupt -->
+  <div class="modal_formen">
+  <div class="modal fade" id="datenbankdesign_projekt_1_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Virtuale Schule</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#datenbankdesign_projekt_1_menu1">Beschreibung des Umfeldes</a></li>
+    <li><a data-toggle="tab" href="#datenbankdesign_projekt_1_menu2">Logisches Schema</a></li>
+    <li><a data-toggle="tab" href="#datenbankdesign_projekt_1_menu3">Physische Projektierung (MySQL)</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="datenbankdesign_projekt_1_menu1" class="tab-pane fade in active">
+<p>
+</p>
+<b>Umfeld:</b> Es geht um E-lernen. Das Projekt heißt "<b>„Virtuale Schule“</b>". Jeder wird für sich passende Kurse von bestimmtem Niveau im Bereich von Web-Programmierung finden. Falls man mit allen Kursen fertig ist, hat man eine Möglichkeit, ein großes Web Projekt mit anderen Studenten unter Verwaltung eines Mentors aufzubauen.
+<p>
+</p>
+<p>
+<b>Pflichtenheft:</b> Es muss die rationale Datenbank <b>„Virtuale Schule“</b> mit folgenden Parameter bzw. Tabellen erzeugt werden:
+</p>
+<p>
+<strong>1.</strong>  <ins>Tabelle „student“.</ins> Dazu gehören das Verzeichnis allen Studenten und ihre Eigenschaften(sowohl eigene Daten als auch Anmeldedaten)
+</p>
+<p>
+<strong>2.</strong> <ins>Tabelle „kontakt_typ“.</ins> Hier in der Tabelle werden Kontakttypen von Studenten angegeben. Dadurch dass jeder Student mehrere Kontanktypen hat (z.B. Mobil, Home, E-Mail, skype u.s.w) wird die Tabelle „kontakt_typ“ mit der Tabelle „student“ durch eine Zwischentabelle „student_kontakt“ verknüpft.
+</p>
+<p>
+<strong>3.</strong>  <ins>Tabelle “user_typ”.</ins> Jeder Student hat mehrere Types (ein Student kann noch Admin oder Mentor für andere Studenten sein). Dadurch dass Studentem viele Types haben, wird die Tabelle „user_typ“ mit der Tabelle „student“ durch eine Zwischentabelle „student_user_typ“ verknüpft.
+</p>
+<p>
+<strong>4.</strong>  <ins>Tabelle „kurs“.</ins> Die Tabelle „kurs“ enthält eine Liste von Kursen, die Studenten besuchen können (z.B. Mathe, Physik, Informatik – sql, html, css, javascript, angularjs, reactjs, java se, java ee, spring, liferay u.s.w.)
+</p>
+<p>
+<strong>5.</strong>  <ins>Tabelle „niveau“.</ins> Die Tabelle „niveau“ hat eine Liste von Niveaus der Kurse ( Ein Kurs kann entweder geringes, mittleres oder hoches Niveau haben)
+</p>
+<p>
+<strong>6.</strong>  <ins>Tabelle „aufgabe_liste“.</ins> In der Tabelle gibt es Listen von Aufgaben für Studenten (siehe auch die Tabelle „aufgabe“)
+</p>
+<p>  
+<strong>7.</strong>  <ins>Tabelle „kurs_niveau“.</ins> Die Tabelle ist eine Zwischentabelle für die Tabellen: „niveau“ und „kurs“. Mehrere Kurse haben mehrere Niveaus.
+</p>
+<p>
+<strong>8.</strong>  <ins>Tabelle „kurs_niveau_aufgabeliste“.</ins> Die Tabelle ist eine Zwischentabelle für die Tabellen: „kurs_niveau“ und „aufgabe_liste“. Jedem Kurs vom bestimmten Niveau ist eine bestimmte Liste von entsprechenden Aufgaben zugeordnet.
+</p>
+<p>
+<strong>9.</strong>  <ins>Tabelle „student_knaufl“.</ins> Eine Zwischentabelle von der Tabelle „student“ und „kurs_niveau_aufgabeliste“. Die Tabelle muss erzeugt werden weil mehrere Studenten gleichzeitig mehrere Kurse besuchen können.
+</p>
+<p>
+<strong>10.</strong> <ins>Tabelle „projekt“.</ins> Die Tabelle erhält eine Liste von Themen der möglichen Projekte für Studenten. Jedes Projekt wird außerdem von einem Mentor unterstützt. 
+</p>
+<p>
+<strong>11.</strong> <ins>Tabelle „projekt_role“.</ins> Jeder Student, der an einem Projekt teilnimmt, hat eine Möglichkeit, für sich selbst eine Rolle auszuwählen bzw. bestimmte Tätigkeit machen (z.B. Datenbank Projektierung, Frontend-Entwicklung, Backend-Entwicklung u.s.w.)
+</p>
+<p>
+<strong>12.</strong>  <ins>Tabelle „student_projekt“.</ins> Die Tabelle ist eine Zwischentabelle und erhält ein Verzeichnis von Studenten die zu bestimmten Projekten zugeordnet sind. Dadurch werden die Gruppen von Studenten gemacht die Projekte machen. Ein Student kann gleichzeitig an mehreren Projekten beteiligt sein. Die Tabelle „student_projekt“ bzw die Gruppen von Studenten müssen von Mentors erzeugt werden. Bedingung: Mentors machen Gruppen von besten Studenten für Ihre interessanten Projekte. 
+</p>
+<p> 
+<strong>13.</strong> <ins>Tabelle „nachricht“.</ins> Mit der Hilfe von der Tabelle kann ein Student mit anderen Studenten kommunizieren.
+</p>
+</div>
+<p>
+</p>
+    <div id="datenbankdesign_projekt_1_menu2" class="tab-pane fade">
+ <img src="img/datenbankdesign/projekt_1/p1_logisches_schema.jpg" alt="Virtuale Schule (Logisches Schema)" height="800" width="800">  
+    </div>
+<p>
+</p>
+    <div id="datenbankdesign_projekt_1_menu3" class="tab-pane fade">
+<pre>
+<code>
+ CREATE DATABASE IF NOT EXISTS virtuale_schule;
+
+/*virtuale_schule.student*/
+create table virtuale_schule.student ( 
+  id int not null auto_increment,
+  name varchar(255) not null,    
+  vorname varchar(255) not null,
+  geburtstag date not null, 
+  geschlecht boolean not null, 
+  login varchar(255) not null, 
+  passwort varchar(255) not null, 
+  primary key (id),
+  UNIQUE KEY(login)
+);
+
+/*virtuale_schule.projekt_role*/
+create table virtuale_schule.projekt_role ( 
+  id int not null auto_increment,
+  projekt_role varchar(255) not null,
+  beschreibung varchar(255) not null,
+  primary key (id)
+);
+
+/*virtuale_schule.projekt*/
+create table virtuale_schule.projekt ( 
+  id int not null auto_increment,
+  projekt_name varchar(255) not null,
+  beschreibung varchar(255) not null,
+  projekt_mentor_id int not null,
+  primary key (id),
+  FOREIGN KEY (projekt_mentor_id) REFERENCES student(id)   
+);
+
+/*virtuale_schule.student_projekt*/
+create table virtuale_schule.student_projekt( 
+  student_id int not null,
+  projekt_id int not null,
+  student_projekt_role_id int not null,
+  primary key (student_id, projekt_id),
+  FOREIGN KEY (student_id) REFERENCES student(id),
+  FOREIGN KEY (projekt_id) REFERENCES projekt(id),
+  FOREIGN KEY (student_projekt_role_id) REFERENCES projekt_role(id)
+);
+
+/*virtuale_schule.user_typ*/
+create table virtuale_schule.user_typ ( 
+  id int not null auto_increment,
+  user_typ varchar(255) not null,
+  beschreibung varchar(255) not null,
+  primary key (id)
+);
+
+/*virtuale_schule.student_user_typ*/
+create table virtuale_schule.student_user_typ( 
+  student_id int not null,
+  user_typ int not null,
+  primary key (student_id, user_typ),
+  FOREIGN KEY (student_id) REFERENCES student(id),
+  FOREIGN KEY (user_typ) REFERENCES user_typ(id)
+);
+
+/*virtuale_schule.kontakt_typ*/
+create table virtuale_schule.kontakt_typ ( 
+  id int not null auto_increment,
+  kontakt_typ varchar(255) not null,
+  primary key (id)
+);
+
+/*virtuale_schule.student_kontakt*/
+create table virtuale_schule.student_kontakt ( 
+  student_id int not null,
+  kontakt_id int not null,
+  kontakt varchar(255) not null,
+  primary key (student_id, kontakt_id),
+  FOREIGN KEY (student_id) REFERENCES student(id),
+  FOREIGN KEY (kontakt_id) REFERENCES kontakt_typ(id)
+);
+
+/*virtuale_schule.kurs*/
+create table virtuale_schule.kurs ( 
+  id int not null auto_increment,
+  kurs varchar(255) not null,
+  beschreibung varchar(255) not null,
+  primary key (id)
+);
+
+/*virtuale_schule.niveau*/
+create table virtuale_schule.niveau ( 
+  id int not null auto_increment,
+  niveau varchar(255) not null,
+  beschreibung varchar(255) not null,
+  primary key (id)
+);
+
+/*virtuale_schule.kurs_niveau*/
+create table virtuale_schule.kurs_niveau ( 
+  id int not null auto_increment,
+  kurs_id int not null,
+  niveau_id int not null,
+  beschreibung int not null,
+  UNIQUE KEY(id),
+  primary key (kurs_id, niveau_id),
+  FOREIGN KEY (kurs_id) REFERENCES kurs(id),
+  FOREIGN KEY (niveau_id) REFERENCES niveau(id)
+);
+
+/*virtuale_schule.aufgabe_liste_status*/
+create table virtuale_schule.aufgabe_liste_status ( 
+  id int not null auto_increment, 
+  aufgabe_liste_status int not null,
+  beschreibung int not null,
+  primary key (id)
+);
+
+/*virtuale_schule.aufgabe_liste*/
+create table virtuale_schule.aufgabe_liste ( 
+  id int not null auto_increment,
+  beschreibung varchar(255) not null,
+  primary key (id)
+);
+
+/*virtuale_schule.aufgabe*/
+create table virtuale_schule.aufgabe ( 
+  id int not null auto_increment,
+  beschreibung_frage varchar(255) not null,
+  beschreibung_antwort varchar(255) not null, 
+  aufgabe_liste_id int not null,
+  FOREIGN KEY (aufgabe_liste_id) REFERENCES aufgabe_liste(id),
+  primary key (id)
+);
+
+/*virtuale_schule.kurs_niveau_aufgabeliste*/
+create table virtuale_schule.kurs_niveau_aufgabeliste( 
+  id int not null auto_increment,
+  kurs_niveau_id int not null,
+  aufgabe_liste_id int not null,
+  primary key (kurs_niveau_id, aufgabe_liste_id),
+  UNIQUE KEY(id),
+  FOREIGN KEY (kurs_niveau_id) REFERENCES kurs_niveau(id),
+  FOREIGN KEY (aufgabe_liste_id) REFERENCES aufgabe_liste(id)
+);
+
+/*virtuale_schule.student_knaufl*/
+create table virtuale_schule.student_knaufl( 
+  student_id int not null,
+  knaufl_id int not null,  
+  aufgabe_liste_status int not null,
+  primary key (student_id, knaufl_id),
+  FOREIGN KEY (student_id) REFERENCES student(id),
+  FOREIGN KEY (knaufl_id) REFERENCES kurs_niveau_aufgabeliste(id),
+  FOREIGN KEY (aufgabe_liste_status) REFERENCES aufgabe_liste_status(id)
+);
+
+/*virtuale_schule.nachricht*/
+create table virtuale_schule.nachricht( 
+  id int not null auto_increment,
+  from_id int not null,  
+  to_id int not null,
+  nachricht varchar(255) not null,
+  date_from date not null,
+  primary key (from_id, to_id),
+  UNIQUE KEY(id),
+  FOREIGN KEY (from_id) REFERENCES student(id),
+  FOREIGN KEY (to_id) REFERENCES student(id)
+);
+</code> 
+  </pre>  
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+        </div>
+          </div>
+      </div>
+    </div>
+
+<!--datenbankdesign_projekt_2-->
+
+ <div id="datenbankdesign_projekt_2">
+<!-- Modal_Haupt -->
+  <div class="modal_formen">
+  <div class="modal fade" id="datenbankdesign_projekt_2_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Online Shop</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#datenbankdesign_projekt_2_menu1">Beschreibung des Umfeldes</a></li>
+    <li><a data-toggle="tab" href="#datenbankdesign_projekt_2_menu2">Logisches Schema</a></li>
+    <li><a data-toggle="tab" href="#datenbankdesign_projekt_2_menu3">Physische Projektierung (MySQL)</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="datenbankdesign_projekt_2_menu1" class="tab-pane fade in active">
+<p>
+</p>
+<p>
+<b>Umfeld:</b> Das Projekt heißt „Online Shop“. 
+Kunden bestellen Waren. 
+Waren können zum Anzeigen/Bestellen sortiert werden: nach Kategorien, nach Abc, nach Preis, 
+nach besten Bewertungen von Kunden und nach Erscheinungsdatum. 
+Waren können von verschiedenen Hersteller produziert werden 
+und können verschiedene Lager haben. Außerdem können alle 
+Waren von Kunden bewertet werden. Autorisierte Kunden 
+können Waren bestellen. Eine Lieferung an Kunden besteht aus vielen Bestellungen. 
+Die muss richtig durch einen Logistiker organisiert werden.
+</p> 
+<p>
+<b>Pflichtenheft: </b> Es muss die rationale Datenbank „Online Shop“ mit folgenden Parameter bzw. Tabellen erzeugt werden:
+</p> 
+<p>
+<strong>1. </strong>  <ins> Tabelle „kunde“.</ins> Ein Kunde wird anhand Anmeldedaten (Login) identifiziert. Außerdem hat ein Kunde seine eigene private Daten (z.B. Vorname, Adresse usw.). Ein Kunde kann entweder Waren anschauen oder Waren bestellen, oder beides falls der Kunde im Online Shop autorisiert ist.
+</p>
+<p>
+<strong>2. </strong> <ins> Tabelle „ware“.</ins> Die Tabelle erhält ein Verzeichnis von Waren, die im Online Shop verkauft werden kann. Waren haben verschiedene Kriterien, wonach die sortiert werden sollen um die für Kunden präsentieren zu können. Waren haben Ihre Läger (Tabelle „lager“), Ihre Hersteller (Tabelle „hersteller“) und Ihre Kategorien (Tabelle „ware_kategorie“). 
+</p>
+<p>
+<strong>3. </strong> <ins> Tabelle „ware_bewertung“.</ins> Die Tabelle ist eine Zwischentabelle für die Tabellen „ware“ und „kunde“. Anhand der Tabelle kann jede Ware von jedem Kunden bewertet werden.
+</p>
+<p>
+<strong>4. </strong> <ins> Tabelle „bestellung“. </ins> Die Tabelle stellt sich als „Einkaufswagen“ von Waren dar. Jede Bestellung wird zu einer Lieferung zugeordnet (es kann nach PLZ machen) um dann später an Kunden schicken zu können. 
+</p>
+<p>
+<strong>5. </strong> <ins>Tabelle „ware_bestellung“. </ins> Eine Zwischentabelle zwischen Tabellen „ware“ und „bestellung“.  Jeder Kunde kann vielen Bestellungen von vielen Waren (und Ihre Anzahl) machen.
+</p>
+<p>
+<strong>6. </strong> <ins>Tabelle „payment_mittel“. </ins> Ein Kunde kann für seine Bestellung anhand verschiedenen Typen von Payment bezahlen (EC-Karte, PayPal, Web Money usw.)
+</p>
+<p>
+<strong>7. </strong> <ins> Tabelle „lieferung“. </ins> Die Tabelle ist dafür da, um eine Lieferung an Kunden zu organisieren. Jeder Lieferung ist einen Logistiker (Tabelle „logistiker“) zugeordnet, der für eine konkrete Lieferung verantwortlich ist. Dabei hat jede Lieferung einen Status („kurz vom Abschicken“, „an Kunden abgeschickt“, „Zugestellt“ usw.)
+</p>
+<p>
+<strong>8. </strong> <ins>Tabellen „fahrer“ und  „lieferungs_auto“ . </ins>Jeder Lieferung (Tabelle „lieferung“) ist einen Fahrer und ein Auto anhand der Tabelle „lieferungs_auto_fahrer“ zugeordnet.
+</div>
+<p>
+</p>
+    <div id="datenbankdesign_projekt_2_menu2" class="tab-pane fade">
+ <img src="img/datenbankdesign/projekt_2/p2_logisches_schema.jpg" alt="Online Shop (Logisches Schema)" height="800" width="800">  
+    </div>
+<p>
+</p>
+    <div id="datenbankdesign_projekt_2_menu3" class="tab-pane fade">
+ <pre>
+  <code>
+CREATE DATABASE IF NOT EXISTS shop;
+
+/*shop.kunde*/
+create table shop.kunde ( 
+  id int not null auto_increment,
+  name varchar(255) not null,    
+  vorname varchar(255) not null,
+  geburtstag date not null, 
+  geschlecht boolean not null, 
+  adresse varchar(255) not null,
+  postleitzahl varchar(255) not null,
+  land varchar(255) not null,
+  login varchar(255) not null, 
+  passwort varchar(255) not null, 
+  primary key (id),
+  UNIQUE KEY(login)
+);
+
+/*shop.hersteller*/
+create table shop.hersteller ( 
+  id int not null auto_increment,
+  name varchar(255) not null,
+  adresse varchar(255) not null,
+  anmerkung varchar(255) null,   
+  primary key (id)
+);
+
+/*shop.ware_kategorie*/
+create table shop.ware_kategorie ( 
+  id int not null auto_increment,
+  beschreibung varchar(255) null,
+  anmerkung varchar(255) null,   
+  primary key (id)
+);
+
+
+/*shop.lager*/
+create table shop.lager ( 
+  id int not null auto_increment,
+  beschreibung varchar(255) not null,
+  adresse varchar(255) not null,    
+  primary key (id)
+);
+
+/*shop.ware*/
+create table shop.ware ( 
+  id int not null auto_increment,
+  artikel int not null,
+  beschreibung date not null,
+  preis double not null,    
+  anzahl_vorhanden int not null,
+  image_ware varchar(255) null,
+  kategorie_id int not null,
+  erscheinungsdatum date not null,
+  lager_id int not null,
+  hersteller_id int not null,
+  FOREIGN KEY (kategorie_id) REFERENCES ware_kategorie(id),
+  FOREIGN KEY (lager_id) REFERENCES lager(id),
+  FOREIGN KEY (hersteller_id) REFERENCES hersteller(id),   
+  primary key (id),
+  UNIQUE KEY(artikel)
+);
+
+
+/*shop.ware_bewertung*/
+create table shop.ware_bewertung ( 
+  id int not null auto_increment,
+  kunde_id int not null,
+  ware_id int not null,
+  kommentare varchar(255) not null,
+  primary key (kunde_id, ware_id),
+  FOREIGN KEY (kunde_id) REFERENCES kunde(id),
+  FOREIGN KEY (ware_id) REFERENCES ware(id),  
+  UNIQUE KEY(id)
+);
+
+/*shop.payment_mittel*/
+create table shop.payment_mittel ( 
+  id int not null auto_increment,
+  payment_mittel varchar(255) not null,
+  primary key (id)
+);
+
+/*shop.logistiker*/
+create table shop.logistiker ( 
+  id int not null auto_increment,
+  name varchar(255) not null,    
+  vorname varchar(255) not null,
+  geburtstag date not null, 
+  geschlecht boolean not null, 
+  login varchar(255) not null, 
+  passwort varchar(255) not null, 
+  primary key (id),
+  UNIQUE KEY(login)
+);
+
+/*shop.status_lieferung*/
+create table shop.status_lieferung ( 
+  id int not null auto_increment,
+  beschreibung varchar(255) not null,    
+  primary key (id)
+);
+
+
+/*shop.lieferungs_auto*/
+create table shop.lieferungs_auto ( 
+  id int not null auto_increment,
+  auto_nummer int not null,
+  primary key (id),
+  UNIQUE KEY(auto_nummer)
+);
+
+
+/*shop.fahrer*/
+create table shop.fahrer ( 
+  id int not null auto_increment,
+  name varchar(255) not null,    
+  vorname varchar(255) not null,
+  geburtstag date not null, 
+  geschlecht boolean not null, 
+  login varchar(255) not null, 
+  passwort varchar(255) not null, 
+  führerschein_bis date not null,
+  primary key (id)
+);
+
+/*shop.lieferungs_auto_fahrer*/
+create table shop.lieferungs_auto_fahrer ( 
+  id int not null auto_increment,
+  auto_id int not null,
+  fahrer_id int not null,
+  UNIQUE KEY(id),
+  FOREIGN KEY (auto_id) REFERENCES lieferungs_auto(id),  
+  FOREIGN KEY (fahrer_id) REFERENCES fahrer(id)  
+);
+
+
+/*shop.lieferung*/
+create table shop.lieferung ( 
+  id int not null auto_increment,
+  preis double not null,
+  status_lieferung_id int not null,
+  lieferungs_date date not null,
+  logistiker_id int not null,
+  lieferungs_auto_fahrer_id int not null,
+  plz_gebiet varchar(255) not null,
+  anmerkung varchar(255) not null,
+  primary key (id),
+  FOREIGN KEY (logistiker_id) REFERENCES logistiker(id),
+  FOREIGN KEY (status_lieferung_id) REFERENCES status_lieferung(id),
+  FOREIGN KEY (lieferungs_auto_fahrer_id) REFERENCES lieferungs_auto_fahrer(id)
+);
+
+
+/*shop.bestellung*/
+create table shop.bestellung ( 
+  id int not null auto_increment,
+  kunde_id int not null,
+  gesamte_preis_bestellten_waren double not null,
+  payment_mittel_id int not null,
+  lieferung_id int not null,
+  lieferungs_adresse varchar(255) not null,    
+  anmerkung varchar(255) not null,
+  primary key (id),
+  FOREIGN KEY (kunde_id) REFERENCES kunde(id),
+  FOREIGN KEY (payment_mittel_id) REFERENCES payment_mittel(id),
+  FOREIGN KEY (lieferung_id) REFERENCES lieferung(id)
+);
+
+
+/*shop.ware_bestellung*/
+create table shop.ware_bestellung ( 
+  id int not null auto_increment,
+  bestellung_id int not null,
+  ware_id int not null,
+  ware_anzahl int not null,
+  bestellungs_date date not null,
+  lieferungs_adresse varchar(255) not null,
+  primary key (bestellung_id,ware_id),
+  FOREIGN KEY (bestellung_id) REFERENCES bestellung(id), 
+  FOREIGN KEY (ware_id) REFERENCES ware(id),
+  UNIQUE KEY(id)
+);
+</code> 
+  </pre>  
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!--_______________________Frontend Projekte _________________________________________________-->
+<div id="frontend">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <h1>Frontend Projekte</h1>
+  <p>
+  In der Kategorie werden Projekte präsentiert, die anhand von Bootstrap, JS und bekannten JS Bibliotheken/JS Frameworks gemacht wurden. 
+  </p>
+  <p>
+  Bei manchen Projekten wurden Google Maps API, OpenWeatherMap API oder Lufthansa API benutzt. Verwendung der API's waren aufgrund der RESTful Webservices organisiert.
+  </p>
+ <p>
+ </p>
+
+    <div id="frontend_filter">
+        <button class="btn btn-primary frontend_filter-button" data-filter="all">Alle Projekte</button>
+        <button class="btn btn-primary frontend_filter-button" data-filter="frontend_jquery">jQuery Projekte</button>
+        <button class="btn btn-primary frontend_filter-button" data-filter="frontend_google_maps_api_and_openweathermap_api">Google Maps API und OpenWeatherMap API Projekte</button>      
+      <!--   <button class="btn btn-primary frontend_filter-button" data-filter="frontend_dbahn_api">Deutsche Bahn API Projekte</button>-->
+        <button class="btn btn-primary frontend_filter-button" data-filter="frontend_lufthansa_api">Lufthansa API Projekte</button>
+ <!--   <button class="btn btn-primary frontend_filter-button" data-filter="frontend_angular2">Angular 2 Projekte</button>
+        <button class="btn btn-primary frontend_filter-button" data-filter="frontend_reactjs">ReactJS Projekte</button> -->
+    </div>
+    
+ <div class ="intervall"></div>
+
+ <div class="row slideanim">
+  
+ <div class="sortable">
+
+<!--frontend_projekt_5-->
+
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_lufthansa_api">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#frontend_projekt_5_modal"
+                     alt=""  src="img/frontend/projekt_5/p5.jpg"
+                   />
+
+                   </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Flugplan Lufthansa
+                </p>
+                </div>
+            </figure>
+            </div>
+        </div>
+
+<!--frontend_projekt_3-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_google_maps_api_and_openweathermap_api">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#frontend_projekt_3_modal"
+                     alt="" src="img/frontend/projekt_3/p3_2.jpg"
+                     />
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Wettervorhersage
+                </p>
+                </div>
+            </figure>
+            </div>
+        </div> 
+		
+<!--frontend_projekt_1-->
+
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_jquery">
+            <div class="each-item zoom">
+            <figure>
+              <div class="ui-state-default">
+                <img class="img-responsive" data-toggle="modal"
+                data-target="#frontend_projekt_1_modal"  alt="" src="img/frontend/projekt_1/p1_3.jpg"
+                onclick="frontend_projekt_1_begins_wert()"/>
+
+                </div>
+                <div class="cap2">
+                    <p div class="pop-up_text_projekt">Ein Tagesplan für Ihr Zeitmanagement</p>
+                </div>
+            </figure>
+            </div>
+        </div>
+     
+<!--frontend_projekt_2-->
+        
+     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_google_maps_api_and_openweathermap_api">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#frontend_projekt_2_modal"
+                     alt="" src="img/frontend/projekt_2/p22_2.jpg"
+                     onclick="frontend_projekt_2_begins_wert()"/>
+
+                      </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Ihre Geolocation, Temperatur und Lokalzeit
+                </p>
+                </div>
+            </figure>
+            </div>
+        </div>
+
+<!--frontend_projekt_4-->
+        
+ <!--    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_dbahn_api">
+            <div class="each-item zoom">
+            <figure>
+            <div class="ui-state-default">
+                <img class="img-responsive" 
+                     data-toggle="modal"
+              data-target="#frontend_projekt_4_modal"
+                     alt="" src="img/frontend/projekt_4/p4.jpg"/>
+                   </div>
+                <div class="cap2">
+                <p div class="pop-up_text_projekt">Fahrplan DB (Fernverkehr)
+                </p>
+                </div>
+            </figure>
+            </div>
+        </div> 
+-->
+
+
+ </div>
+ </div>
+
+</div>
+</div>
+
+<!--frontend_projekt_1-->
+
+<div id="frontend_projekt_1">
+<!-- Modal_Haupt -->
+  <div class="modal_formen">
+  <div class="modal fade" id="frontend_projekt_1_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ein Plan für Ihre wichtige Ereignisse</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+
+
+<form onSubmit="return add_plan(document.getElementById('planCalendarVonInput').value,
+document.getElementById('planCalendarBisInput').value, document.getElementById('planTextInput').value)" >
+
+<div class="row">
+    <div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+        <div class="form-group">
+            <div class='input-group date'>
+             <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+                <input type='text' id="planCalendarVonInput" required class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+                <input type='text' id="planCalendarBisInput" required class="form-control" />
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <span class="input-group-addon">
+                <i class="fa fa-list-alt"></i>
+              </span>
+                <input type='text' id="planTextInput" maxlength="60"  placeholder="Eine neue Veranstaltung..." required class="form-control" autofocus/>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class='col-xs-8'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <input type="submit" id="addButton" class="btn btn-primary btn-lg" value="Die Veranstaltung in die Tabelle hinzufügen...">
+          </div>
+        </div>
+    </div>
+    </div>
+</form>
+
+
+<div class="row">
+<div class='col-xs-12'>
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Veranstaltungen</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-md btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+                </div>
+            </div>
+            <table id="planlist" class="table table-hover table-bordered ">
+                <thead>
+                    <tr class="filters">
+                        <th id="p_id"><input type="text"  class="form-control" placeholder="ID" disabled></th>
+                        <th id="p_v"><input type="text"  class="form-control" placeholder="Veranstaltung" disabled></th>
+                        <th id="p_datum_von"><input type="text"  class="form-control" placeholder="Datum_Von" disabled></th>
+                        <th id="p_datum_bis"><input type="text"  class="form-control" placeholder="Datum_Bis" disabled></th>
+                        <th id="p_a"><input type="text" class="form-control" placeholder="Action" disabled></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+</div>
+</div>
+</div>
+<div class="row">
+<div class='col-xs-12'>
+<button id="exportButton_excel" class="btn btn-primary col-xs-5"><span class="fa fa-file-excel-o"></span> Export to Excel</button>
+<div class='col-xs-1'>
+</div>
+<button id="exportButton_pdf" class="btn btn-primary col-xs-5"><span class="fa fa-file-pdf-o"></span> Export to PDF</button>
+</div>
+</div>
+</div>
+<br>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<form id="frontend_projekt_1_modal_edit" method="post" class="form-horizontal" style="display: none;">
+    <div class="form-group" style="display: none;">
+        <label class="col-xs-3 control-label">ID</label>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" name="id" disabled="disabled" />
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Veranstaltung</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" id="ver_edit" name="planTextInput_edit" maxlength="60" required/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Datum_Von</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" id="datum_von_edit" name="planCalendarVonInput_edit" required/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Datum_Bis</label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control"  id="datum_bis_edit" name="planCalendarBisInput_edit" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-5 col-xs-offset-3">
+            <button type="submit" class="btn btn-default">Save</button>
+        </div>
+    </div>
+</form>    
+</div>
+
+<!--frontend_projekt_2-->
+<div id="frontend_projekt_2">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="frontend_projekt_2_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ihre Geolocation, Temperatur und Lokalzeit</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+<div class="row">
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+
+<div id="city_info"></div>
+<div id="wetter_info"></div>
+<div id="time"></div>
+<div id="loc_img"></div>
+
+<div id="location">
+
+</div>   
+<div id="distance">
+
+</div>
+</div>
+</div>
+<div class="row">
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<div id="map">
+</div>  
+</div> 
+</div>
+
+<div class="row">
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<div id="projekt_2_text">
+*Genaugkeit Ihrer tatsächlichen Geolocation kann sich von der angegebenen Geolocation sehr unterscheiden, 
+weil das von Technologie des Berechnen der Geolocation abhängt (IP-Ortung,  GSM-Ortung oder GPS). 
+GPS wäre empfehlenswert für die besten Genaugkeit Ihrer tatsächlichen Geolocation 
+<br>
+<br>
+</div>
+
+<button id="watch" class="btn btn-primary btn-lg col-xs-5"><span class="fa fa-play"></span> Reise beginnen</button>
+<div class='col-xs-1'>
+</div>
+<button id="clearWatch" class="btn btn-primary btn-lg col-xs-5"><span class="fa fa-stop"></span> Reise stoppen</button>
+
+</div>
+</div>
+</div>
+<br>
+
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--frontend_projekt_3-->
+<div id="frontend_projekt_3">
+<!-- Modal_Haupt -->
+ <div class="modal_formen">
+  <div class="modal fade" id="frontend_projekt_3_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Wettervorhersage</h4>
+        </div>
+        <div class="modal-body" style="width: 800">
+<div class="container-fluid">
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#frontend_projekt_3_menu1">Wettervorhersage App</a></li>
+    <li><a data-toggle="tab" href="#frontend_projekt_3_menu2">Beispiel</a></li>
+  </ul>
+
+ <div class="tab-content">
+      <div id="frontend_projekt_3_menu1" class="tab-pane fade in active">
+        <div class="row">
+        <div class='col-xs-8'>
+        <p>
+        </p>
+<form onSubmit="return init_projekt_3_stadt1(document.getElementById('city_info_projekt_3_stadt1').value)" >
+    <div class="row">
+    <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <span class="input-group-addon">
+                <i class="fa fa-building"></i>
+              </span>
+                <input type='text' id="city_info_projekt_3_stadt1" maxlength="60"  placeholder="eine Stadt..." required class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <input type="submit" class="btn btn-primary btn-lg" value="Die Stadt finden">
+          </div>
+        </div>
+    </div>
+    </div>
+</form>
+<p>
+</p>
+<div class="row">
+
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<div id="wetter_infor">
+Geben Sie bitte einen aktuellen Namen der Stadt
+</div>
+</div> 
+
+<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+<div class="wetter_info_">
+<p id="wetter_info_projekt_3_stadt1_tag1_date"></p>
+<p id="wetter_info_projekt_3_stadt1_tag1"></p>
+</div>
+</div>
+
+<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+<div class="wetter_info_">
+<p id="wetter_info_projekt_3_stadt1_tag2_date"></p>
+<p id="wetter_info_projekt_3_stadt1_tag2"></p>
+</div>
+</div>
+
+<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+<div class="wetter_info_">
+<p id="wetter_info_projekt_3_stadt1_tag3_date"></p>
+<p id="wetter_info_projekt_3_stadt1_tag3"></p>
+</div>
+</div>
+
+<div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+<div class="wetter_info_">
+<p id="wetter_info_projekt_3_stadt1_tag4_date"></p>
+<p id="wetter_info_projekt_3_stadt1_tag4"></p>
+</div>
+</div>
+
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<div class="wetter_info_">
+<p id="wetter_info_projekt_3_stadt1_tag5_date"></p>
+<p id="wetter_info_projekt_3_stadt1_tag5"></p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="frontend_projekt_3_menu2" class="tab-pane fade">
+        <p>
+        </p>
+ <img src="img/frontend/projekt_3/p3_beispiel.jpg" alt="Fahrplan DB (Fernverkehr)" height="600" width="600">       
+</div>
+
+</div>
+
+</div>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+        </div>
+          </div>
+      </div>
+    </div>
+
+<!--
+<div id="frontend_projekt_4"> -->
+<!-- Modal_Haupt -->
+<!--  <div class="modal_formen">
+  <div class="modal fade" id="frontend_projekt_4_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">-->
+      <!-- Modal content-->
+ <!--     <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Fahrplan DB (Fernverkehr)</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#frontend_projekt_4_menu1">Anleitung</a></li>
+    <li><a data-toggle="tab" href="#frontend_projekt_4_menu2">DB App</a></li>
+    <li><a data-toggle="tab" href="#frontend_projekt_4_menu3">Beispiel</a></li>
+  </ul>
+
+  <div class="tab-content">
+      <div id="frontend_projekt_4_menu1" class="tab-pane fade in active">
+        <div class="row">
+        <div class='col-xs-8'>
+        <div class="fahrplan_db_info">
+        <p>
+        </p>
+        <p>
+        </p>
+        Diese Webanwendung stellt Fahrplandaten, im ersten Schritt den SOLL-Fahrplan des Fernverkehrs (Direktverbindungen), zur Verfügung.
+        <p>
+        </p>
+        Es wurde dafür die <a href="https://developer.deutschebahn.com/store/apis/info?name=Fahrplan-Free&version=v1&provider=DBOpenData" target="_blank">Deutsche Bahn API</a> benutzt.
+        <p>
+        </p>
+        Bitte suchen Sie 2 Haltestellen (Bahnhöfe) und Abfahrtzeit aus und drücken Sie den "Suchen" Knopf auf. 
+        <p>
+        </p>
+        <div class="rote_farbe_text">
+        Dabei sollen Sie beachten, dass Sie beim Suchen keine Ergebnisse bekommen können, wenn direkte Verbindungen des Fernverkehrs zwischen angegebenen Haltestellen nicht existieren
+        </div>
+        <p>
+        </p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="frontend_projekt_4_menu2" class="tab-pane fade">
+        <p>
+        </p>
+<form onSubmit="return suchen_db_fahrt(document.getElementById('cityVon').value,
+document.getElementById('cityBis').value,
+document.getElementById('dateAbfahrt').value,
+document.getElementById('dateAnkunft').value)" >
+
+<div class="row">
+<div class='col-xs-10 col-sm-5 col-md-5 col-lg-4'>
+
+<div class="form-group">
+<div class='input-group date'>
+               <span class="input-group-addon">
+              <i class="fa fa-train"></i>
+              </span>
+
+  <select class="form-control" id="cityVon" required>
+  <option value="" selected>Bitte aussuchen...</option>
+  </select>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class='col-xs-10 col-sm-5 col-md-5 col-lg-4'>
+
+<div class="form-group">
+<div class='input-group date'>
+               <span class="input-group-addon">
+              <i class="fa fa-train"></i>
+              </span>
+  <select class="form-control" id="cityBis" required>
+<option value="" selected>Bitte aussuchen...</option>
+  </select>
+
+</div>
+</div>
+
+</div>
+</div>
+
+    <div class="row">
+    <div class='col-xs-9 col-sm-5 col-md-5 col-lg-5'>
+        <div class="form-group">
+            <div class='input-group date'>
+             <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+                <input type='text' id="dateAbfahrt" required  />
+            </div>
+        </div>
+    </div>
+    <div class='col-xs-5 col-sm-5 col-md-5 col-lg-5' style="display: none;">
+        <div class="form-group">
+            <div class='input-group date'>
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+                <input type='text' id="dateAnkunft"   />
+            </div>
+        </div>
+    </div>
+  
+    </div>
+
+  <div class="row">
+    <div class='col-xs-8'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <input type="submit" id="suchen_db_fahrt_button" class="btn btn-primary btn-lg" value="Suchen">
+          </div>
+        </div>
+    </div>
+    </div>
+
+
+</form>
+
+<div class="row">
+<div class='col-xs-8'>
+<div id="accordion">
+</div>
+</div> 
+</div>
+<p>
+</p>
+</div>
+    <div id="frontend_projekt_4_menu3" class="tab-pane fade">
+            <p>
+        </p>
+<img src="img/frontend/projekt_4/p4_beispiel.jpg" alt="Fahrplan DB (Fernverkehr)" height="500" width="300">
+    </div>   
+  </div>
+</div>
+
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+        </div>
+          </div>
+      </div>
+    </div>
+-->
+
+<div id="frontend_projekt_5">
+<!-- Modal_Haupt -->
+  <div class="modal_formen">
+  <div class="modal fade" id="frontend_projekt_5_modal" role="dialog">
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Flugplan Lufthansa</h4>
+        </div>
+        <div class="modal-body">
+<div class="container-fluid">
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#frontend_projekt_5_menu1">Anleitung</a></li>
+    <li><a data-toggle="tab" href="#frontend_projekt_5_menu2">Flugplan Lufthansa App</a></li>
+    <li><a data-toggle="tab" href="#frontend_projekt_5_menu3">Beispiel</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="frontend_projekt_5_menu1" class="tab-pane fade in active">
+
+<div class="row">
+<div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+        <p>
+        </p>
+<p>
+Diese Webanwendung stellt Flugplandaten, im ersten Schritt den SOLL-Flugpplan (Direktverbindungen), zur Verfügung.
+</p>
+<p>
+Die <a href="https://developer.lufthansa.com" target="_blank">Lufthansa API</a> wurde dafür verwendet.
+</p>
+<p>
+Bitte suchen Sie 2 Flughäfen und Abflugszeit aus und drücken Sie den "Flug Suchen" Knopf auf.
+</p>
+<p>
+</p>
+</div>
+</div>
+
+<div class="row">
+<div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+<div id="div_bis_liste_flug"></div>
+</div> 
+</div>
+<p>
+</p>
+</div>
+<p>
+</p>
+    <div id="frontend_projekt_5_menu2" class="tab-pane fade">
+
+<form onSubmit="return suchen_lufthansa_flug(document.getElementById('flughafenVon').value,
+document.getElementById('flughafenBis').value,
+document.getElementById('dateAbflug').value)" >
+
+<div class="row">
+<div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+
+<div class="form-group">
+<div class='input-group date'>
+               <span class="input-group-addon">
+              <i class="fa fa-plane"></i>
+              </span>
+
+  <select class="form-control" id="flughafenVon" required>
+  <option value="" selected>Bitte aussuchen...</option>
+  </select>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+
+<div class="form-group">
+ 
+ <div class='input-group date'>
+               <span class="input-group-addon">
+              <i class="fa fa-plane"></i>
+              </span>
+  <select class="form-control" id="flughafenBis" required>
+<option value="" selected>Bitte aussuchen...</option>
+  </select>
+
+</div>
+</div>
+
+</div>
+</div>
+
+    <div class="row">
+    <div class='col-xs-9 col-sm-5 col-md-5 col-lg-5'>
+        <div class="form-group">
+            <div class='input-group date'>
+             <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+                <input type='text' id="dateAbflug" required  />
+            </div>
+        </div>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+        <div class="form-group">
+            <div class='input-group date'>
+              <input type="submit" id="suchen_lufthansa_button" class="btn btn-primary btn-lg" value="Flug Suchen">
+          </div>
+        </div>
+    </div>
+    </div>
+</form>
+        <br>
+  <div class="row">
+    <div class='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
+        <div class="table-responsive">
+            <table class="table table-striped" id="table1">
+                <thead>
+                    <tr>
+                        <td>Lokale Zeit vom Abflug</td>
+                        <td>Terminal vom Abflug</td>
+                        <td>Lokale Zeit von der Landung</td>
+                        <td>Terminal von der Landung</td>
+                        <td>Flug Number</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">
+                </tbody>
+            </table>
+        </div>
+                </div>
+                        </div>
+<div id="error_message_flug">
+<p>
+Vermutliche Gründe warum Sie leider keine Suchergebnisse angezeigt bekommen haben:
+</p>
+1. Sie haben 2 gleiche Flughäfen ins Suchfeld angegeben. <br>
+2. Es existieren keine direkte Verbindungen zwischen angegebenen Flughäfen in ausgewälter Zeit.
+            <p>
+        </p>
+</div>
+</div>
+<div id="frontend_projekt_5_menu3" class="tab-pane fade">
+            <p>
+        </p>
+<img src="img/frontend/projekt_5/p5_beispiel.jpg" alt="Flugplan Lufthansa" height="600" width="800">
+    </div> 
+
+  </div>
+</div>
+<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+</div>
+</div>
+        </div>
+          </div>
+      </div>
+    </div>   
+</div>  
+</div>
+
+<!-- _________________________ Kontakte_____________________________-->
+
+<div id="feedback">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <h1>Kontakte</h1>
+  <br>
+  <div class="container">
+    <div class="wrapper animated bounceIn">
+      <div class="company-info">
+		  <i class="fa fa-envelope"></i><a href = "mailto:andrey.boiv@gmail.com" class="header_links" target="_blank">&nbsp;&nbsp;andrey.boiv@gmail.com </a>
+      </div>
+   </div>
+  </div>
+</div>
+</div>
+</div>  
+</div>
+
+<!-- <div id="spa"></div> -->
+
+<a href="#" id="back_to_top" class="simple-back-to-top"></a>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<!--Bootstrap JS CDN-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<!--==================================================-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js" ></script>-->
+
+<!-- Excel, PDF Export Projekt1 -->
+<script src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+<script src="https://www.shieldui.com/shared/components/latest/js/jszip.min.js"></script>
+
+<!--Slow Scrolling>
+==================================================-->
+<script src="js/other/slow_scroll.js" ></script>
+<!--==================================================-->
+
+<!--jQuery Slide Elements>
+==================================================-->
+<script src="js/other/slide_elements.js" ></script>
+<!--==================================================-->
+
+<!--Foto Filter>
+==================================================-->
+<script src="js/other/foto_filter.js" ></script>
+<!--==================================================-->
+
+<!-- Background change (Storage)==================================================-->
+
+<script src="js/other/background_storage.js"></script>
+
+<!--==================================================-->
+
+
+<!-- FRONTEND -->
+<!--Projekt 1 - Ein Tagesplan für Ihr Zeitmanagement>
+==================================================-->
+<script src="js/frontend/projekt_1/projekt_1.js"></script>
+<!--==================================================-->
+<!--Projekt 2 - Geo Location>
+==================================================-->
+<!--<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvRe3LI5iqxEQtUdK4DkWbFTpOJjdhx3U"></script>
+<script src="js/frontend/projekt_2/projekt_2.js"></script>
+<!--==================================================-->    
+<!--Projekt 3>
+==================================================-->
+<script src="js/frontend/projekt_3/projekt_3.js"></script>
+<!--==================================================-->  
+<!--Projekt 4>
+==================================================-->
+<script src="js/frontend/projekt_4/projekt_4.js"></script>
+<!--==================================================-->  
+<!--Projekt 5>
+==================================================-->
+<script src="js/frontend/projekt_5/projekt_5.js"></script>
+<!--==================================================-->  
+
+<!-- FRONTEND -->
+
+<!--JAVA_SE -->
+<!--JAVA_SE -->
+
+<!--JAVA_Enterprise -->
+<!--JAVA_Enterprise -->
+
+
+<!--Openlayers js>
+==================================================
+<script src="https://openlayers.org/en/v4.2.0/build/ol.js"></script>-->
+<!--==================================================-->  
+
+<!-- jQuery-Bibliothek confirm>
+================================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.3/jquery-confirm.min.js"></script>
+<!--==================================================-->
+
+<!--moment-js-bibliothek>
+==================================================-->
+<script src="js/other/moment-with-locales.js"></script>
+<!--==================================================-->
+
+<!--bootstrap-datetimepicker-bibliothek>
+==================================================-->
+<script src="js/other/bootstrap-datetimepicker.min.js"></script>
+<!--==================================================-->
+
+<script src="https://oss.maxcdn.com/bootbox/4.2.0/bootbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/formValidation.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
+<!--<script src="http://formvalidation.io/vendor/jquery.steps/js/jquery.steps.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+
+
+<!-- _________________________ impressum Datenschutz_____________________________-->
+
+<div id="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<p><a href="impressum/impressum.html" class="header_links" target="_blank">Impressum</a> | <a href="datenschutz/datenschutz.html" class="header_links" target="_blank">Datenschutz</a></p>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

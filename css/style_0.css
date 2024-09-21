@@ -1,0 +1,853 @@
+/* В некоторых случаях, вам может понадобится растянуть элемент по вертикали на всю высоту окна.
+Обычное изменение размера элемента — даст ему максимум высоту контейнера в котором он находится.
+Чтобы задать блоку высоту в 100% от всего окна, необходимо убедится что высота самых первых
+контейнеров html и body равна 100%, то есть высоте окна. */
+
+/*http://csslint.net */
+
+html, body {
+      	font-family : "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      	font-size: large; 
+      	background: #fff no-repeat center center fixed;
+      	-webkit-background-size: cover;
+      	-moz-background-size: cover;
+      	-o-background-size: cover;
+      	background-size: cover;
+     /* 	height: 100%;*/
+        position: relative;
+}
+   [data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 700px; /* Ширина подсказки */
+    right: 10%; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
+
+/* NAVIGATION MENU */
+/* 1E90FF */
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #333;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+ /*   line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;*/
+}
+
+.nav{
+    margin-right:100px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #333 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
+
+
+
+.dropdown-menu{
+    background-color: #333 !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+  /*  border-left-color: #ccc;*/
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+ /*   border-left-color: #fff;*/
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+/*
+*/
+
+
+.navbar-inverse .navbar-nav>.open>a {
+    color: #fff;
+    background-color: #333 !important;
+}
+
+.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff  !important;
+    background-color: #333 !important;  
+}
+
+.navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+}
+
+
+/* NAVIGATION MENU */
+
+
+ /*HEADER */
+
+#header h1{
+	font-size: 45px;
+}
+/* HEADER */
+
+/*HEADER, FRONTEND, JAVA SE, JAVA EE,
+SPRING, LIFERAY PORTAL, ANDROID, BLOG, FEEDBACK FORMULAR, FOOTER*/
+
+a.header_links{
+  font-size: 20px;
+  color: #0070c9;
+}
+
+a.header_links_willkommen{
+  font-size: 18.72 px;
+  color: #0070c9;
+}
+
+/*
+   a:visited {
+    color: #F5F5DC;*/ /* Цвет посещенных ссылок */
+ /*  }/*
+   a:active {
+    color: #808080; *//* Цвет активных ссылок */
+  /* }*/
+
+#header, #frontend, #datenbankdesign, #java_se, #java_e_p, #spring, #liferay_portal, #java_webservices,
+#android, #projekte_auf_linux_einrichten, #blog, #about, #feedback, #footer {
+ 	/* Bloki budut po visote ekrana i ne budut drug
+ 	drugu meschat pri prosmotre*/
+ 	margin-top: 100px;
+ 	padding-top: 100px;
+ /*	height: 100%;*/
+    color: #333;
+    text-align: center;
+}
+
+#frontend, #datenbankdesign, #java_se, #java_e_p, #spring, #liferay_portal, #java_webservices,
+#android, #projekte_auf_linux_einrichten, #blog, #about, #feedback{
+  margin-top: 800px;
+}
+
+
+#feedback{
+  margin-bottom: 200px;
+}
+
+.btn.btn-default.btn-lg{
+ /*background: #adadad;
+   border-style: solid;
+*/
+  border-color: #adadad;
+
+
+}
+
+/*
+
+.btn{
+  background-color: #d7e6f4; 
+  border-color: #333;
+}
+
+.btn-primary{
+	background-color: #333;
+	border-color: #333;
+}
+
+
+.btn-primary:hover{
+	background-color: #1E90FF;
+	background-color: #1E90FF;
+	border-color: #1E90FF;
+}
+
+.addButton:active{
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+*/
+
+.pop-up_text_projekt {
+	color:#0070c9;
+	font-weight:bold;
+	background-color:white;
+}
+
+
+/*Modal Form Center */
+.modal {
+  text-align: center;
+  color:black;
+}
+
+div.ui-state-default
+{
+    border: none;
+    background: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.intervall
+{
+    height: 50px;
+}
+/*Modal Form Center */
+
+.img-responsive{
+	width: 300px;
+	height: 200px;
+    border-color: black;
+    border: solid;
+}
+
+
+/*HEADER, FRONTEND, JAVA SE, JAVA EE,
+SPRING, LIFERAY PORTAL, ANDROID, BLOG, FEEDBACK FORMULAR, FOOTER*/
+
+
+/* FRONTEND */
+
+#frontend_filter .filter-button{
+    background-color: #333;
+    width: auto;
+}
+
+.each-item
+{
+    position:relative;
+    overflow:hidden;
+    margin:20px;
+}
+
+.each-item:hover .cap2, .each-item:hover
+{
+    left:0px;
+  /*  box-shadow: 10px 10px 5px #888888;*/
+    cursor: pointer;
+	background-color:white;
+}
+
+/* Zoom */
+.zoom figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+.zoom figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+	border:none;
+
+}
+/* Zoom */
+
+.cap2
+{
+    position:absolute;
+    width: 345px;
+    height:30%;
+	background:transparent;
+    bottom:0px;
+    left:100%;
+    padding:10px;
+    transition: all .5s;
+}
+
+/*frontend_projekt_1*/
+/*
+#exportButton_space_1, #exportButton_space_2{
+	visibility: hidden;
+}*/
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+		height: 46px;
+}
+
+.filterable {
+    margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
+}
+
+#p_id, #p_v, #p_datum_von, #p_datum_bis, #p_a{
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+/*frontend_projekt_1*/
+/*frontend_projekt_2*/
+#exportButton_pdf_3, #watch, #clearWatch, #projekt_2_text{
+    visibility: hidden;
+}
+
+/*#reise_begin{
+margin-right: 10px;
+}
+
+#reise_stop{
+margin-left: 10px;    
+margin-right: 10px;    
+}*/
+
+#loc_img {
+    height: 70px;
+}
+
+#map{
+        
+   height: 300px;
+    width: 300px;
+
+ /*   display:inline-block;*/
+}
+
+
+/*frontend_projekt_2*/
+
+/*frontend_projekt_3*/
+
+#loc_img_projekt_3{
+    height: 70px;
+}
+
+.wetter_info_{
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#wetter_info_projekt_3_stadt1_tag1_date, 
+#wetter_info_projekt_3_stadt1_tag2_date, 
+#wetter_info_projekt_3_stadt1_tag3_date, 
+#wetter_info_projekt_3_stadt1_tag4_date,
+#wetter_info_projekt_3_stadt1_tag5_date{
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+#wetter_info_projekt_3_stadt1_tag1,
+#wetter_info_projekt_3_stadt1_tag2,
+#wetter_info_projekt_3_stadt1_tag3,
+#wetter_info_projekt_3_stadt1_tag4,
+#wetter_info_projekt_3_stadt1_tag5{
+  
+}
+
+/*frontend_projekt_3*/
+
+/*frontend_projekt_4
+
+  .custom-combobox {
+    position: relative;
+    display: inline-block;
+  }
+  .custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+  }
+  .custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+  } */
+
+/*
+.ui-autocomplete-input {
+  border: none; 
+  font-size: 14px;
+  width: 300px;
+  height: 24px;
+  margin-bottom: 5px;
+  padding-top: 2px;
+  border: 1px solid #DDD !important;
+  padding-top: 0px !important;
+  z-index: 1511;
+  position: relative;
+}
+.ui-menu .ui-menu-item a {
+  font-size: 12px;
+}
+.ui-autocomplete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1510 !important;
+  float: left;
+  display: none;
+  min-width: 160px;
+  width: 160px;
+  padding: 4px 0;
+  margin: 2px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+}
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.ui-state-hover, .ui-state-active {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #0088cc;
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      background-image: none;
+}
+#modalIns{
+    width: 500px;
+}*/
+
+.rote_farbe_text {
+  color: red;
+}
+
+/*frontend_projekt_4*/
+
+/*frontend_projekt_5*/
+#error_message_flug { 
+    color: red;
+}
+/*frontend_projekt_5*/
+
+/*frontend_projekt_6*/
+#projekt_6_text_area {
+  resize: none;
+}
+
+#projekt_6_name, #projekt_6_button_new_user {
+   display:inline-block;
+}
+/*frontend_projekt_6/*
+
+/* FRONTEND */
+
+/*JAVA SE*/
+/*java_se_projekt_1*/
+
+/*java_se_projekt_1*/
+
+
+
+
+/*JAVA SE*/
+
+/*JAVA EE*/
+/*JAVA EE*/
+
+/*SPRING*/
+/*SPRING*/
+
+/*LIFERAY PORTAL*/
+/*LIFERAY PORTAL*/
+
+/*ANDROID*/
+/*ANDROID*/
+
+/*BLOG*/
+/*BLOG*/
+
+/*ABOUT*/
+
+a.about_links{
+    font-size: 20px;
+    color: #0070c9;
+}
+
+/*ABOUT*/
+
+/*FEEDBACK FORMULAR*/
+
+*{
+  box-sizing: border-box;
+}
+
+/*
+body{
+  background:#92bde7;
+  color:#485e74;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+
+
+.container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+
+
+.brand{
+  text-align: center;
+}
+
+.brand span{
+  color:#fff;
+}
+*/
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+/*
+.company-info{
+  background:#c9e6ff;
+}
+*/
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+/*
+.contact{
+  background:#f9feff;
+}
+
+*/
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #0066cc;
+  color:#0066cc;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact form button{
+/*  background:#c9e6ff;*/
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+/*  background:#92bde7;
+  color:#fff;*/
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+}
+
+
+#contakt_form_button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #0066cc;
+}
+
+/*#contakt_form_button:hover {  background-color: #27AE61;}
+*/
+
+#contakt_form_button:active {
+  background-color: #0066cc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*FEEDBACK FORMULAR*/
+
+/*FOOTER*/
+/*FOOTER*/
+
+
+/*Slide In Elements
+We have also created an animation effect
+which will slide in elements on scroll.
+If you want to use it, just add the .slideanim class
+to the element you want to slide in, and add the
+following to your CSS and jQuery
+(feel free to modify the duration, opacity,
+where to start, when to slide in, and so on):*/
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*Slide In Elements*/
+
+/*Back-to-top*/
+/*
+	.back-to-top {
+		/*display: inline;*/
+/*
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+	  background-color: #1E90FF;
+
+
+	}
+
+    .back-to-top:hover {
+        background-color: #fff;
+        color: #1E90FF;
+
+    }*/
+
+		a.back-to-top {
+			display: none;
+			width: 50px;
+			height: 50px;
+			text-indent: -9999px;
+			position: fixed;
+			z-index: 999;
+			bottom: 100px;
+			right: 40px;
+			background: #0066cc url("up-arrow.png") no-repeat center 43%;
+	/*		-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;*/
+			background-color: #0066cc;
+		}
+		a:hover.back-to-top {
+	/*		background-color: #fff;
+			color: #1E90FF;*/
+		}
+
+
+
+/*Back-to-top*/
+
+/*Chat*/
+/*
+    #spa {
+      position : absolute;
+      top      : 8px;
+      left     : 8px;
+      bottom   : 8px;
+      right    : 8px;
+      border-radius    : 8px 8px 0 8px;
+      background-color : #fff;
+    }
+*/
+
+    .spa-slider {
+      position : absolute;
+      bottom   : 0;
+      left     : 2px;
+      width    : 300px;
+      height   : 16px;
+      cursor   : pointer;
+      border-radius    :  0 8px 0 0;
+      background-color : #0066cc;
+    }
+
+/*Chat*/
+
+
