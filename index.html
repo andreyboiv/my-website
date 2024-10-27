@@ -125,9 +125,9 @@ document.onmousedown = rtclickcheck;
 	<li><a href="#java_e_p">&nbsp;&nbsp;Java Web Projekte</a></li>
 	<li><a href="#java_se">&nbsp;&nbsp;Java SE (Konsole & Desktop) Projekte</a></li>	
 	<li><a href="#datenbankdesign">&nbsp;&nbsp;Datenbankdesign Projekte</a></li>
-	<li><a href="#frontend">&nbsp;&nbsp;Frontend Projekte</a></li>
+	<li><a href="#frontend">&nbsp;&nbsp;JavaScript Projekte</a></li>
 	<li><a href="#feedback">&nbsp;&nbsp;Kontakte</a></li>
-	<li><a href="https://boivalenko.de/lebenslauf_zeugnisse.pdf" target="_blank">&nbsp;&nbsp;Lebenslauf & Zeugnisse</a></li>
+	<li><a href="lebenslauf_zeugnisse.pdf" target="_blank">&nbsp;&nbsp;Lebenslauf & Zeugnisse</a></li>
 	
 </ul>
 </div>
@@ -149,7 +149,7 @@ document.onmousedown = rtclickcheck;
 <div>
 <br>
                 <img class="img-responsive" 
-                     alt="" src="img/foto.jpg" 
+                     alt="" src="img/profil_foto.jpg"
 					 style="
 	width:40%;height:40%;display:block;
 	margin-left: auto;
@@ -186,11 +186,11 @@ Auf meiner Portfolio-Website findet man Präsentation von Projekten aus den Bere
 <li><a href="#datenbankdesign" class="header_links_willkommen">Datenbankdesign</a></li>
 </p>
 <p> 
-<li><a href="#frontend" class="header_links_willkommen">Frontend</a></li>
+<li><a href="#frontend" class="header_links_willkommen">JavaScript</a></li>
 </p>
 </ul>
 <br>
-<a href="https://boivalenko.de/lebenslauf_zeugnisse.pdf" class="header_links_willkommen" target="_blank"> Hier</a> 
+<a href="lebenslauf_zeugnisse.pdf" class="header_links_willkommen" target="_blank"> Hier</a>
 sind meine Lebenslauf und Zeugnisse
 <br>
 <br>
@@ -749,6 +749,7 @@ Die Benachrichtigung erhält das Onboarding Team entsprechend auch.
 <a href="https://github.com/andreyboiv/onboarding-tool" target="_blank" >Das Projekt auf GitHub</a>
 <br>
 </p>
+<a href="https://onboarding.boivalenko.de" target="_blank" >Demo (Frontend) des Projektes</a>
 </div>
 <p>
 </p>
@@ -1892,12 +1893,12 @@ create table shop.ware_bestellung (
   </div>  
 </div>
 
-<!--_______________________Frontend Projekte _________________________________________________-->
+<!--_______________________JavaScript Projekte _________________________________________________-->
 <div id="frontend">
 <div class="container-fluid">
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  <h1>Frontend Projekte</h1>
+  <h1>JavaScript Projekte</h1>
   <p>
   In der Kategorie werden Projekte präsentiert, die anhand von Bootstrap, JS und bekannten JS Bibliotheken/JS Frameworks gemacht wurden. 
   </p>
@@ -1911,7 +1912,7 @@ create table shop.ware_bestellung (
         <button class="btn btn-primary frontend_filter-button" data-filter="all">Alle Projekte</button>
         <button class="btn btn-primary frontend_filter-button" data-filter="frontend_jquery">jQuery Projekte</button>
         <button class="btn btn-primary frontend_filter-button" data-filter="frontend_google_maps_api_and_openweathermap_api">Google Maps API und OpenWeatherMap API Projekte</button>      
-      <!--   <button class="btn btn-primary frontend_filter-button" data-filter="frontend_dbahn_api">Deutsche Bahn API Projekte</button>-->
+        <button class="btn btn-primary frontend_filter-button" data-filter="frontend_dbahn_api">Deutsche Bahn API Projekte</button>
         <button class="btn btn-primary frontend_filter-button" data-filter="frontend_lufthansa_api">Lufthansa API Projekte</button>
  <!--   <button class="btn btn-primary frontend_filter-button" data-filter="frontend_angular2">Angular 2 Projekte</button>
         <button class="btn btn-primary frontend_filter-button" data-filter="frontend_reactjs">ReactJS Projekte</button> -->
@@ -2006,7 +2007,7 @@ create table shop.ware_bestellung (
 
 <!--frontend_projekt_4-->
         
- <!--    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_dbahn_api">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 frontend_filter frontend_dbahn_api">
             <div class="each-item zoom">
             <figure>
             <div class="ui-state-default">
@@ -2021,8 +2022,7 @@ create table shop.ware_bestellung (
                 </div>
             </figure>
             </div>
-        </div> 
--->
+        </div>
 
 
  </div>
@@ -2363,14 +2363,14 @@ Geben Sie bitte einen aktuellen Namen der Stadt
       </div>
     </div>
 
-<!--
-<div id="frontend_projekt_4"> -->
+
+<div id="frontend_projekt_4">
 <!-- Modal_Haupt -->
-<!--  <div class="modal_formen">
+  <div class="modal_formen">
   <div class="modal fade" id="frontend_projekt_4_modal" role="dialog">
-    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">-->
+    <div class="modal-dialog modal-xs modal-sm modal-md modal-lg">
       <!-- Modal content-->
- <!--     <div class="modal-content">
+      <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Fahrplan DB (Fernverkehr)</h4>
@@ -2407,6 +2407,10 @@ Geben Sie bitte einen aktuellen Namen der Stadt
         </div>
         <p>
         </p>
+        <div class="rote_farbe_text">
+        Der Stand vom 21.10.2024:
+            Das <a href="https://api.deutschebahn.com/fahrplan-plus/v1/" target="_blank">API</a> gibt's leider nicht mehr... Stattdessen wurde eine komplett neue <a href="https://developers.deutschebahn.com/db-api-marketplace/" target="_blank">Plattform</a> mit neuen API's erstellt...
+        </div>
         </div>
         </div>
         </div>
@@ -2519,7 +2523,7 @@ document.getElementById('dateAnkunft').value)" >
           </div>
       </div>
     </div>
--->
+
 
 <div id="frontend_projekt_5">
 <!-- Modal_Haupt -->
@@ -2699,7 +2703,11 @@ Vermutliche Gründe warum Sie leider keine Suchergebnisse angezeigt bekommen hab
   <div class="container">
     <div class="wrapper animated bounceIn">
       <div class="company-info">
-		  <i class="fa fa-envelope"></i><a href = "mailto:andrey.boiv@gmail.com" class="header_links" target="_blank">&nbsp;&nbsp;andrey.boiv@gmail.com </a>
+          <ul>
+              <li><i class="fa fa-envelope"></i><a href = "mailto:andrey.boiv@gmail.com" target="_blank" class="header_links">&nbsp;&nbsp;andrey.boiv@gmail.com </a></li>
+              <li><i class="fa fa-linkedin"></i><a href = "https://linkedin.com/in/andrey-boivalenko" target="_blank" class="header_links">&nbsp;&nbsp;LinkedIn Profil</a></li>
+              <li><i class="fa fa-github"></i><a href = "https://github.com/andreyboiv" target="_blank" class="header_links">&nbsp;&nbsp;GitHub Profil</a></li>
+          </ul>
       </div>
    </div>
   </div>
@@ -2804,10 +2812,9 @@ Vermutliche Gründe warum Sie leider keine Suchergebnisse angezeigt bekommen hab
 <script src="js/other/bootstrap-datetimepicker.min.js"></script>
 <!--==================================================-->
 
-<script src="https://oss.maxcdn.com/bootbox/4.2.0/bootbox.min.js"></script>
+<script src="js/other/bootbox.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/formValidation.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.formvalidation/0.6.1/js/framework/bootstrap.min.js"></script>
-<!--<script src="http://formvalidation.io/vendor/jquery.steps/js/jquery.steps.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
 
 

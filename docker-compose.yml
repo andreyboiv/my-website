@@ -1,0 +1,13 @@
+services:
+  nginx:
+    container_name: "nginx_server"
+    image: nginx:1.27.2-alpine3.20
+    ports:
+      - 8585:80
+    networks:
+      - app
+    volumes:
+      - ./:/usr/share/nginx/html
+    restart: always
+networks:
+  app:
